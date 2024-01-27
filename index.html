@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            User Details
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="formContainer">
+            <button id="login" onclick="login()">Login</button><br>
+            <button id="Signup" onclick="signUp()">Sign up</button>
+        </div>
+
+        <div id="loginForm">
+            <h1>Log in</h1>
+                <label for="email">EMAIL:</label><br><br>
+                <input type="email" placeholder="enter your email..." id="email" name="email">
+                <br><br><br>
+                <label for="passworrd">PASSWORD:</label><br><br>
+                <input type="password" placeholder="password..." id="password" name="password">
+                <br>
+                <button id="submitForm" onclick="userDetail()">Login</button>
+        </div>
+
+        <div id="userData">
+            <h1>Your Data</h1>
+            <div id="innerdivofuserdata"><br><br>
+                <b>EMAIL: </b><span id="userMail">mail</span><br><br><br><br>
+                <b>NAME: </b><span id="userName">name</span><br><br><br><br>
+                <b>AGE: </b><span id="userAge">age</span><br><br><br><br>
+                <b>GENDER: </b><span id="userGender">gender</span><br><br><br><br>
+                <b>BIRTH DATE: </b><span id="userBirth">birt</span>
+                
+            </div>
+            <button id = "home" onclick="homes()">Home</button>
+        </div>
+
+        <div id="signupForm">
+            <h1>Sign Up</h1>
+            <label for="signEmail">EMAIL:</label><br><br>
+            <input type="email" id="signemail" name="signemail" placeholder="enter your email">
+            <br><br>
+            <label for="sigPassword">PASSWORD:</label><br><br>
+            <input type="password" id="sigPassword" name="sigPassword" placeholder="create password">
+            <br><br>
+            <label for="signCheckpsd">CONFIRM PASSWORD:</label><br><br>
+            <input type="password" id="signCheckpsd" name="signCheckpsd" placeholder="confirm password">
+            <br><br>
+            <button id="signupButton" onclick="signUpDetail()">Sign Up</button>
+        </div>
+        </div>
+
+        <div id="DataEntry">
+            <h1>Enter Your Data</h1>
+            <div id="divinsidedataentry">
+                <label for="enterName">NAME:</label><br><br>
+                <input type="text" id="enterName" name="enterName" placeholder="Enter your name" required><br><br><br>
+                <label for="enterAge">AGE:</label><br><br>
+                <input type="text" id="enterAge" name="enterAge" placeholder="Enter age" required><br><br><br>
+                <label for="enterGender">GENDER:</label><br><br>
+                <input type="text" id="enterGender" name="enterGender" placeholder="Male/Femal" required><br><br><br>
+                <label for="enterBirth">BIRTH DATE:</label><br><br>
+                <input type="text" id="enterBirth" name="enterBirth" placeholder="DD/MM/YYYY" required><br><br><br>
+
+                
+            </div>
+            <button id="DataEntryButton" onclick="DataEntryButton()">Save Data</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
