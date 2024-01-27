@@ -52,7 +52,9 @@ function login(){
 
 function userDetail(){
     var eml = emailId.value;
+    emailId.value='';
     var psd= passwordId.value;
+    passwordId.value='';
     if(eml!='' && psd!=''){
         let m=0;
         let k=0;
